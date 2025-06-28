@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
 conda create -n citibike \
+    numpy==2.2.6 \
     pandas \
     psycopg2-binary \
     python-dotenv \
@@ -8,4 +9,6 @@ conda create -n citibike \
     matplotlib \
     geopandas \
     geodatasets \
-    contextily
+    contextily \
+    skimage \
+    sqlalchemy
