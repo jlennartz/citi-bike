@@ -9,6 +9,13 @@ from tqdm import tqdm
 import psycopg2
 import math
 from sqlalchemy import create_engine
+from pathlib import Path
+
+
+def ensure_plots_dir(results_dir):
+    plots_dir = Path(results_dir) / "plots"
+    plots_dir.mkdir(exist_ok=True)
+    return plots_dir
 
 
 def setup_grid_parameters(lon_min, lat_min, lon_max, lat_max, cell_x, cell_y, cell_t, time_max):
