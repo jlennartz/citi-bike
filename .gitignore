@@ -1,6 +1,7 @@
 # specific files
 notes.txt
-results/
+*.csv
+*.npy
 
 # python specific stuff
 __pycache__/
