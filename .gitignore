@@ -1,5 +1,6 @@
 # specific files
 notes.txt
+results/
 
 # python specific stuff
 __pycache__/
